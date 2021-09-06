@@ -1,0 +1,61 @@
+
+.e-treegrid .e-rowcell.customcss{
+    background-color: #ecedee;
+    font-family: 'Bell MT';
+    color: 'red';
+    font-size: '20px';
+}
+
+.e-treegrid .e-headercell.customcss{
+    background-color: #2382c3;
+    color: white;
+    font-family: 'Bell MT';
+    font-size: '20px';
+}
+.menuItem{
+    z-index: 7;
+    position: absolute;
+display: none;
+display: flex;
+flex-direction: column;
+
+padding: 7px;
+border: 1px solid rgb(143, 143, 143);
+background-color: white;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+font-size: 12px;
+border-radius: 8px;
+
+li {
+    list-style-type: none;
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+
+    cursor: pointer;
+}
+li:hover {
+    list-style-type: none;
+    color: rgb(146, 141, 141);
+
+    margin-bottom: 7px;
+
+}
+
+ul{
+    padding: 0px;
+}
+}
+
+e-grid .e-gridheader{
+    width: 100px;
+}
+.table-holder{
+    // height: 70vh;
+    // border: 1px solid black;
+}
+.navBar{
+    
+    height: 70px;
+    // border: 1px solid black;
+}
+

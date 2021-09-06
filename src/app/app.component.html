@@ -1,0 +1,30 @@
+<div class="control-section">
+  <div class="content-wrapper">
+    <div id="TreeGrid"></div>
+  </div>
+</div>
+<div class="table-holder" (contextmenu)="contextMenu($event)" (click)="hideContext()">
+  <div class="menuItem" #menu>
+    <ul>
+      <li (click)="exportPDF()">PDF Export</li>
+      <li (click)="exportexcel()">Excel Export</li>
+      <li (click)="ConvertToCSV()">CSV Export</li>
+
+    </ul>
+  </div>
+  <ejs-treegrid [dataSource]="data" frozenRows="0"allowRowDragAndDrop ="true"  allowSelection="false"
+    type='Multiple' treeColumnIndex="1" [pageSettings]='pageSettings' [toolbar]="toolbar" [editSettings]="editSettings"
+    [allowFiltering]="true" [allowSorting]="true" [selectionSettings]='selectOptions'   allowPaging= "true" id="excel-table">
+
+    <e-columns isPrimaryKey='true'>
+      <e-column field='TaskId' headerText='Task ID' width='100' textAlign='center' isPrimaryKay="true"></e-column>
+      <e-column field='TaskName' headerText='Task Name' width='100' textAlign='center'></e-column>
+      <e-column field='StartDate' headerText='Start Date' width='90' format="yMd" textAlign='center'></e-column>
+      <e-column field='EndDate' headerText='End Date' width='90' format="yMd" textAlign='center'></e-column>
+      <e-column field='Duration' headerText='Duration' width='90' textAlign='center'></e-column>
+    </e-columns>
+
+
+  </ejs-treegrid>
+
+</div>
